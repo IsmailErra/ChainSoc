@@ -1,0 +1,21 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Development dependencies and temporary outputs
+node_modules/
+.venv/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Runtime evidence may contain sensitive log content
+alerts.txt
+vault_logs.txt
+blockchain_results.txt
+last_processed_log.txt

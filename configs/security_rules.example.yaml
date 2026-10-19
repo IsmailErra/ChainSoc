@@ -1,0 +1,9 @@
+# Source: ChainSOC report, section 2.2.5, printed page 30 (PDF page 39).
+# This is the single YAML example shown in the report, not the complete ruleset.
+# The detector implementation and schema validator are not included.
+- name: brute_force_attack
+  pattern: "Failed password"
+  severity: critical
+  threshold: 5
+  time_window: 60
+  action: alert
